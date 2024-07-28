@@ -1,0 +1,51 @@
+#calci{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color:rgba(172, 255, 47, 0.432);
+
+}
+
+#cal-main body {
+    border: 2px solid #000;
+    padding: 20px;
+    background-color:rgba(172, 255, 47, 0.432);;
+    border-radius: 50px;
+}
+
+.cal-rows {
+    display: flex;
+    margin-bottom: 10px;
+    
+}
+
+#result {
+    font-size: 20px;
+    padding: 10px;
+    margin-right: 20px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50px;
+    background-color:seagreen;
+    
+}
+
+#result {
+    width:calc(105% - 20px);
+    margin-bottom: 20px;
+    background-color:seagreen;
+    text-align: center;
+} 
+
+
+.cal-clicks {
+    font-size: 20px;
+    padding: 10px;
+    margin-right: 20px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50px;
+    background-color:seagreen;
+    width:calc(100% - 20px);           
+}
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simple JavaScript Calculator</title>
+    <script src="frame.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+
+<body>
+    <div id="calci">
+        <div id="cal-main body">
+            <input type="text" id="result" readonly>
+            <div class="cal-rows">
+                <button class="cal-clicks" onclick="display('1')">1</button>
+                <button class="cal-clicks" onclick="display('2')">2</button>
+                <button class="cal-clicks" onclick="display('3')">3</button>
+                <button class="cal-clicks" onclick="display('+')">+</button>
+            </div>
+            <div class="cal-rows">
+                <button class="cal-clicks" onclick="display('4')">4</button>
+                <button class="cal-clicks" onclick="display('5')">5</button>
+                <button class="cal-clicks" onclick="display('6')">6</button>
+                <button class="cal-clicks" onclick="display('-')">-</button>
+            </div>
+            <div class="cal-rows">
+                <button class="cal-clicks" onclick="display('7')">7</button>
+                <button class="cal-clicks" onclick="display('8')">8</button>
+                <button class="cal-clicks" onclick="display('9')">9</button>
+                <button class="cal-clicks" onclick="display('*')">*</button>
+            </div>
+            <div class="cal-rows">
+                <button class="cal-clicks" onclick="display('0')">0</button>
+                <button class="cal-clicks" onclick="display('.')">.</button>
+                <button class="cal-clicks" onclick="calculate()">=</button>
+                <button class="cal-clicks" onclick="display('/')">/</button>
+            </div>
+            <button class="cal-clicks" onclick="clearDisplay()" style="width:calc(105% - 20px">Clear</button>
+        </div>
+    </div>
+
+    <script>
+        function display(value) {
+            document.getElementById('result').value += value;
+        }
+
+        function calculate() {
+            let expression = document.getElementById('result').value;
+            document.getElementById('result').value = math.evaluate(expression);
+        }
+
+        function clearDisplay() {
+            document.getElementById('result').value = '';
+        }
+    </script>
+</body>
+
+</html>
